@@ -1,0 +1,16 @@
+{
+  "name": "EurusBesuDev",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ eu-03/EurusBesuDev",
+    "create-local": "graph create --node http://localhost:8020/ eu-03/EurusBesuDev",
+    "remove-local": "graph remove --node http://localhost:8020/ eu-03/EurusBesuDev",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 eu-03/EurusBesuDev"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.21.1",
+    "@graphprotocol/graph-ts": "0.20.0"
+  }
+}
